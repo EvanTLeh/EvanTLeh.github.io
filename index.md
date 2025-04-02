@@ -14,13 +14,13 @@ This program aimed to examine companies in the S&P 500, measure the sentiment of
 
 <img src="Report/image.png?raw=true"/>
 
-[Python Notebook of Code(Clicking will Download File)](Report/build_sample.ipynb)
+[Python Notebook of Code](Report/build_sample.md)
 
 ---
 
 _**[Regression Practice](regression.md)**_
 
-
+This Code is meant to do a regression on different variables against the Sales price of houses sold in Ames, Iowa between 2006-2008
 
 <img src="images/image.png?raw=true"/>
 
