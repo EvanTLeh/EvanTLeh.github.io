@@ -10,7 +10,7 @@ I am an awesome student at Lehigh, you should hire me!
 
 _**[Natural language processing 10-Ks to identify risks](Report/report.md)**_
 
-This program aimed to examine companies in the S&P 500, measure the sentiment of each company’s 10 K, and examine the returns after the 10 Ks were filed. The final results were a correlation table showing the strength of the connection between the sentiment and the return(Shown Below), and different scatterplots to measure each given measure.
+This program aimed to examine companies in the S&P 500, measure the sentiment of each company’s 10 K, and examine the returns after the 10 Ks were filed. The final results were different scatterplots to measure each given measure and a correlation table showing the strength of the connection between the sentiment and the return(Shown Below). The Variables here are the returns 3 days after and 10 days after, based on 2 different dictionaries, and sentiment around Supply chain, Risk, and Competition.
 
 <img src="Report/image.png?raw=true"/>
 
