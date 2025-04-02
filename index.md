@@ -1,6 +1,6 @@
 ## About Me
 
-I am an awesome student at Lehigh, you should hire me!
+My Name is Evan Trock, and I am currently a junior studying finance with minors in Computer Science and Fintech at Lehigh University. The purpose of this website is to showcase coding work I have done on my own and in classes, mainly from FIN377.(Applied Data Analytics for Finance in Python)
 
 ---
 
