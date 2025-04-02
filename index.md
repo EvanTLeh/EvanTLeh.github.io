@@ -18,7 +18,7 @@ This program aimed to examine companies in the S&P 500, measure the sentiment of
 
 ---
 
-_**[Regression Practice](Regression_practice)**_
+_**[Regression Practice](regression.md)**_
 
 
 
