@@ -10,7 +10,7 @@ I am an awesome student at Lehigh, you should hire me!
 
 _**[Natural language processing 10-Ks to identify risks](Report/report.md)**_
 
-You can show off your midterm analysis by moving the report components and output into this file. Or...
+This program aimed to examine companies in the S&P 500, measure the sentiment of each company’s 10 K, and examine the returns after the 10 Ks were filed. The final results were a correlation table showing the strength of the connection between the sentiment and the return(Shown Below), and different scatterplots to measure each given measure.
 
 <img src="Report/image.png?raw=true"/>
 
