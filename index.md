@@ -14,6 +14,8 @@ This program aimed to examine companies in the S&P 500, measure the sentiment of
 
 <img src="Report/image.png?raw=true"/>
 
+[Python Notebook of Code](Report/build_sample.ipynb)
+
 ---
 
 _**[Regression Practice](Regression_practice)**_
