@@ -20,7 +20,7 @@ This program aimed to examine companies in the S&P 500, measure the sentiment of
 
 _**[Regression Practice](Regression_practice)**_
 
-Or: The process that created this page can be used to show off your whole midterm analysis file, as is.
+
 
 <img src="images/image.png?raw=true"/>
 
