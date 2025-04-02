@@ -1,4 +1,8 @@
-## Evan Trock's Report for ASGN 5
+---
+layout: wide_default
+---  
+
+## Evan Trock's Report for The Midterm
 
 # Summary Section
 The goal of this program was to look at companies in the S&P 500, measure the sentiment of the each companies' 10k and look at the returns after the 10k's were filed. The ending results were a correlation table, showing the strength of the connection between the sentiment and the return, and different scatterplots to measure each given measure.
