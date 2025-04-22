@@ -40,9 +40,7 @@ _**[Some personal project](/pdf/sample_presentation.pdf)**_
 
 ## Career Objectives
 
-Write what you want. 
-
-Sell yourself!
+I want to break into the Fintech realm to utilize my strong quantitative and coding skills. Before entering this growing industry, I want to gain a strong background in traditional finance and see what the market looks like! In the summer of 2024, I worked as a Data Analysis intern in Milan, Italy, with E4Impact. I was able to dip my toes in the finance area and see what doing valuations was like in a real business environment.
 
 ---
 
