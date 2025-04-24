@@ -28,13 +28,11 @@ This Code is meant to do a regression on different variables against the Sales p
 
 _**[Eventual team project](https://donbowen.github.io/teamproject/)**_
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
-_**[Some personal project](/pdf/sample_presentation.pdf)**_
+_**[More personal projects coming](/pdf/sample_presentation.pdf)**_
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
 
