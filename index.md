@@ -6,7 +6,11 @@ My Name is Evan Trock, and I am currently a junior studying finance with minors 
 
 ## Portfolio
 
-<!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
+---
+
+_**[Team Project: Nueral Network to Predit Stock Returns](https://asset-test-dash.streamlit.app)**_
+
+---
 
 _**[Natural language processing 10-Ks to identify risks](Report/report.md)**_
 
@@ -23,10 +27,6 @@ _**[Regression Practice](regression/regression.md)**_
 This Code is meant to do a regression on different variables against the Sales price of houses sold in Ames, Iowa, between 2006-2008
 
 <img src="images/image.png?raw=true"/>
-
----
-
-_**[Eventual team project](https://donbowen.github.io/teamproject/)**_
 
 
 ---
