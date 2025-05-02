@@ -10,13 +10,15 @@ My Name is Evan Trock, and I am currently a junior studying finance with minors 
 
 _**[Team Project: Neural Network to Predit Stock Returns](https://asset-test-dash.streamlit.app)**_
 
+<img src="images/nnpic.jpg?raw=true"/>
+
 ---
 
 _**[Natural language processing 10-Ks to identify risks](Report/report.md)**_
 
 This program aimed to examine companies in the S&P 500, measure the sentiment of each company’s 10 K, and examine the returns after the 10 Ks were filed. The final results were different scatterplots to measure each given measure and a correlation table showing the strength of the connection between the sentiment and the return(Shown Below). The Variables here are the returns 3 days after and 10 days after, based on 2 different dictionaries, and sentiment around Supply chain, Risk, and Competition.
 
-<img src="Report/image.png?raw=true"/>
+<img src="images/NLPpic.jpg?raw=true"/>
 
 [Markdown Notebook of Code](Report/build_sample.md)
 
