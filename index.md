@@ -10,6 +10,8 @@ My Name is Evan Trock, and I am currently a junior studying finance with minors 
 
 _**[Team Project: Neural Network to Predit Stock Returns](https://lehigh-asset-pricing.streamlit.app)**_
 
+Click on the Link above to read up on our Stock Predictor project
+
 <img src="images/nnpic.jpg?raw=true"/>
 
 ---
