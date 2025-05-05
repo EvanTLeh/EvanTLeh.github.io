@@ -66,6 +66,7 @@ I love playing golf and have been playing for 13 years now! I also enjoy exercis
 
 ---
 ## Contact Information
+
 Personal Email: Evanrtrock@gmail.com
 School Email: Ert226@lehigh.edu
 Phone: (203)216-8981
