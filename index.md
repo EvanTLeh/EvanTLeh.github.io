@@ -33,8 +33,9 @@ This Code is meant to do a regression on different variables against the Sales p
 
 ---
 
-_**[More personal projects coming](/pdf/sample_presentation.pdf)**_
+_**[Machine Learning Project](/MLfold/asgn-07_exercises.md)**_
 
+This Project preprocesses data in a pipeline, estimates a model, and hypertunes a model on a CV with training data, then evaluates the test file
 
 ---
 
@@ -50,4 +51,3 @@ I love playing golf and have been playing for 13 years now! I also enjoy exercis
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
