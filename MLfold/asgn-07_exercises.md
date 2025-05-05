@@ -1,6 +1,6 @@
 ## Machine Learning Practice
 
-Objective: After this assignment, you can build a pipeline that
+Objectives:
 1. Preprocesses realistic data (multiple variable types) in a pipeline that handles each variable type
 1. Estimates a model using CV
 1. Hypertunes a model on a CV folds within training sample
@@ -20,7 +20,6 @@ y = np.log(housing.v_SalePrice)
 housing = housing.drop('v_SalePrice',axis=1)
 ```
 
-To ensure you can be graded accurately, we need to make the "randomness" predictable. (I.e. you should get the exact same answers every single time we run this.)
 
 Per the recommendations in the [sk-learn documentation](https://scikit-learn.org/stable/common_pitfalls.html#general-recommendations), what that means is we need to put `random_state=rng` inside every function in this file that accepts "random_state" as an argument.
 
@@ -33,26 +32,6 @@ X_train, X_test, y_train, y_test = train_test_split(housing, y, random_state=rng
 ```
 
 ## Part 1: Preprocessing the data
-
-1. Set up a single pipeline called `preproc_pipe` to preprocess the data.
-    1. For **all** numerical variables, impute missing values with SimpleImputer and scale them with StandardScaler
-    1. `v_Lot_Config`: Use OneHotEncoder on it 
-    1. Drop any other variables (handle this **inside** the pipeline)
-1. Use this pipeline to preprocess X_train. 
-    1. Describe the resulting data **with two digits.**
-    1. How many columns are in this object?
-
-_HINTS:_
-- _You do NOT need to type the names of all variables. There is a lil trick to catch all the variables._
-- _The first few rows of my print out look like this:_
-
-| | count | mean | std | min  | 25%  | 50% |  75% |  max
-| --- | --- | --- | ---  | ---  | --- |  --- |  --- |  ---
-|  v_MS_SubClass | 1455 | 0 | 1 | -0.89 | -0.89 | -0.2 | 0.26 | 3.03
-|  v_Lot_Frontage | 1455 | 0 | 1 | -2.2 | -0.43 | 0 | 0.39 | 11.07
-|  v_Lot_Area  | 1455 | 0 | 1 | -1.17 | -0.39 | -0.11 | 0.19 | 20.68
-| v_Overall_Qual | 1455 | 0 | 1 | -3.7 | -0.81 | -0.09 | 0.64 | 2.8
-
 
 ```python
 from sklearn.compose import make_column_transformer, make_column_selector
@@ -341,21 +320,6 @@ X_train_preprocessed_df.describe().round(2)
 
 ## Part 2: Estimating one model
 
-_Note: A Lasso model is basically OLS, but it pushes some coefficients to zero. Read more in the `sklearn` User Guide._
-
-1. Report the mean test score (**show 5 digits**) when you use cross validation on a Lasso Model (after using the preprocessor from Part 1) with
-    - alpha = 0.3, 
-    - CV uses 10 `KFold`s
-    - R$^2$ scoring 
-1. Now, still using CV with 10 `KFold`s and R$^2$ scoring, let's find the optimal alpha for the lasso model. You should optimize the alpha out to the exact fifth digit that yields the highest R2. 
-    1. According to the CV function, what alpha leads to the highest _average_ R2 across the validation/test folds? (**Show 5 digits.**)
-    1. What is the mean test score in the CV output for that alpha?  (**Show 5 digits.**)
-    1. After fitting your optimal model on **all** of X_train, how many of the variables did it select? (Meaning: How many coefficients aren't zero?)
-    3. After fitting your optimal model on **all** of X_train, report the 5 highest  _non-zero_ coefficients (Show the names of the variables and the value of the coefficients.)
-    4. After fitting your optimal model on **all** of X_train, report the 5 lowest _non-zero_ coefficients (Show the names of the variables and the value of the coefficients.)
-    5. After fitting your optimal model on **all** of X_train, now use your predicted coefficients on the test ("holdout") set! What's the R2?
-
-
 ```python
 from sklearn.linear_model import LassoCV
 from sklearn.pipeline import Pipeline
@@ -428,26 +392,6 @@ print(f"2.6) R^2 score on test set: {r2_score_test:.5f}")
     
 
 ## Part 3: Optimizing and estimating your own model
-
-You can walk! Let's try to run! The next skill level is trying more models and picking your favorite. 
-
-Read this whole section before starting!  
-
-1. Output 1: Build a pipeline with these 3 steps and **display the pipeline** 
-    1. step 1: preprocessing: possible preprocessing things you can try include imputation, scaling numerics, outlier handling, encoding categoricals, and feature creation (polynomial transformations / interactions) 
-    1. step 2: feature "selection": [Either selectKbest, RFEcv, or PCA](https://scikit-learn.org/stable/modules/feature_selection.html#feature-selection)
-    1. step 3: model estimation: [e.g. a linear model](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model) or an [ensemble model like HistGradientBoostingRegressor](https://scikit-learn.org/stable/modules/ensemble.html#histogram-based-gradient-boosting)
-1. Pick two hyperparameters to optimize: Both of the hyperparameters you optimize should be **numeric** in nature (i.e. not median vs mean in the imputation step). Pick parameters you think will matter the most to improve predictions. 
-    - Put those parameters into a grid search and run it. 
-1. Output 2: Describe what each of the two parameters you chose is/does, and why you thought it was important/useful to optimize it.
-1. Output 3: Plot the average (on the y-axis) and STD (on the x-axis) of the CV test scores from your grid search for 25+ models you've considered. Highlight in red the dot corresponding to the model **you** prefer from this set of options, and **in the figure somewhere,** list the parameters that red dot's model uses. 
-    - Your plot should show at least 25 _**total**_ combinations.
-    - You'll try far more than 25 combinations to find your preferred model. You don't need to report them all.
-1. Output 4: Tell us the set of possible values for each parameter that were reported in the last figure.
-    - For example: "Param 1 could be 0.1, 0.2, 0.3, 0.4, and 0.5. Param 2 could be 0.1, 0.2, 0.3, 0.4, and 0.5." Note: Use the name of the parameter in your write up, don't call it "Param 1".
-    - Adjust your gridsearch as needed so that your preferred model doesn't use a hyperparameter whose value is the lowest or highest possible value for that parameter. Meaning: If the optimal is at the high or low end for a parameter, you've _probably_ not optimized it!
-1. Output 5: Fit your pipeline on all of X_train using the optimal parameters you just found. Now use your predicted coefficients on the test ("holdout") set! **What's the R2 in the holdout sample with your optimized pipeline?**
-
 
 ```python
 #1. 
