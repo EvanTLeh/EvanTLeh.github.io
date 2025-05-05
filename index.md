@@ -46,7 +46,7 @@ _**[Merging Project to Display Patent Data](/merge/asgn04_exercises.md)**_
 
 Implement merge functions and use line graphs to show patents based on industry through the years since 1980
 
-Graph showing rapidly evolving tech based on patents:
+Graph showing rapidly evolving tech based on patents for each industry:
 <img src="merge/output_13_1.png?raw=true"/>
 
 
