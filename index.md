@@ -42,6 +42,16 @@ Graph showing the best model:
 
 ---
 
+_**[Merging Project to Display Patent Data](/merge/asgn04_exercises.md)**_
+
+Implement merge functions and use line graphs to show patents based on industry through the years since 1980
+
+Graph showing rapidly evolving tech based on patents:
+<img src="merge/output_13_1.png?raw=true"/>
+
+
+---
+
 ## Career Objectives
 
 I want to break into the Fintech realm to utilize my strong quantitative and coding skills. Before entering this growing industry, I want to gain a strong background in traditional finance and see what the market looks like! In the summer of 2024, I worked as a Data Analysis intern in Milan, Italy, with E4Impact. I was able to dip my toes in the finance area and see what doing valuations was like in a real business environment.
