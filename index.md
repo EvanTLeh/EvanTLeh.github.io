@@ -37,6 +37,9 @@ _**[Machine Learning Project](/MLfold/asgn-07_exercises.md)**_
 
 This Project preprocesses data in a pipeline, estimates a model, and hypertunes a model on a CV with training data, then evaluates the test file
 
+Graph showing the best model:
+<img src="MLfold/output_13_0.png?raw=true"/>
+
 ---
 
 ## Career Objectives
