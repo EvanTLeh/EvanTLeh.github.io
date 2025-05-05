@@ -62,3 +62,14 @@ I want to break into the Fintech realm to utilize my strong quantitative and cod
 
 I love playing golf and have been playing for 13 years now! I also enjoy exercising and am on Lehigh's club tennis team. I am also an avid sports fan with the Mets being my favorite team, but I also closely follow the Jets, Knicks, and Rangers.
 
+---
+## Contact Information
+Personal Email: Evanrtrock@gmail.com
+School Email: Ert226@lehigh.edu
+Phone: (203)216-8981
+Westport, CT
+
+---
+ <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+ 
+
